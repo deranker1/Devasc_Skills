@@ -2,7 +2,11 @@
 
 ### Task 1: Python expirements practica
 
-* Start by setting up your DEVASC-LABVM and get it up and running.
+* Start by setting up your DEVASC-LABVM and get it up and running
+* Install [VirtualBox](https://www.virtualbox.org/) 
+* Download the [OVA](https://www.netacad.com/portal/content/devnet-associate-virtual-machines-vms) file from cisco's website 
+* Open Oracle Virtual Box and import the OVA file
+* Use the username **devasc** and password **Cisco123!** to login
 * Running Python in VS Code
   * First Install [Visual Studio Code](https://code.visualstudio.com/)
   * Open VS Code and open the python script located in the task 1 folder
@@ -27,16 +31,22 @@ Possible issues:
 * If you can't access jupyter via chromium based browser, try firefox
 * If Python IDLE gets errors when trying to run code, check the python versions and make sure they match
 
-
-
 ### Task 2: Explore Python development tools and REST APIs
 
-Start by setting up your DEVASC-LABVM and get it up and running.
+* Start by setting up your DEVASC-LABVM and get it up and running.
+* If not yet completed, see task 1
+* Explore REST APIs with School Library API
+  * Go to the School Library Documentation page by opening the chromium browser
+  * 
 
 ### Task 3: Github Skills
 
-Start by setting up your DEVASC-LABVM and get it up and running.
+* Start by setting up your DEVASC-LABVM and get it up and running. 
+* If not yet completed, see task 1.
+
 
 ### Task 4: Webex teams API
 
-Start by setting up your DEVASC-LABVM and get it up and running.
+* Start by setting up your DEVASC-LABVM and get it up and running. 
+* If not yet completed, see task 1.
+* 
