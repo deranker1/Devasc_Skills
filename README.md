@@ -57,17 +57,16 @@ Possible issues:
 * If not yet completed, see task 1.
 * Parsing JSON data in different formats using [jsonconvert.py](https://github.com/deranker1/Devasc_Skills/blob/main/Task%205:%20Data%20Format%20Conversion/json_convert.py)
 * Parsing JSON to YAML
- * First import the YAML library
- * Use the print("---") to create three dashes which is required for YAML formatting
- * Use print together with the YAML method .dump() and pass in the variable which encapsulates the JSON string
- * You should now see the JSON string displayed in YAML format
+  * First import the YAML library
+  * Use the print("---") to create three dashes which is required for YAML formatting
+  * Use print together with the YAML method .dump() and pass in the variable which encapsulates the JSON string
+  * You should now see the JSON string displayed in YAML format
 * Parsing JSON to Python Dict
- * First make sure you have imported the json library
- * Use print with the json method .loads() and pass in the valid JSON variable
- * You should now see the JSON string displayed in dictionary format
- * Parsing Python Dict to JSON
+  * First make sure you have imported the json library
+  * Use print with the json method .loads() and pass in the valid JSON variable
+  * You should now see the JSON string displayed in dictionary format
+* Parsing Python Dict to JSON
   * First make sure you have imported the json library
   * Use print with the json method .dumps() and pass in the valid Dict variable 
   * Optionally you could also pass in the **indent** parameter with an assigned number to create a cleaner display
   * The dict should now display in JSON format
-  * 
