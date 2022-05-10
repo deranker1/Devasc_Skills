@@ -37,19 +37,46 @@ Possible issues:
 * If not yet completed, see task 1
 * Explore REST APIs with School Library API
   * Go to the School Library Documentation page by opening the chromium browser
-  * 
+  * Use the interactive API calls to execute methods on demand
+  * Open VS Code and 
 
 ### Task 3: Github Skills
 
 * Start by setting up your DEVASC-LABVM and get it up and running. 
 * If not yet completed, see task 1.
-
+* Make sure to create a github account
+* Download and install [git](https://git-scm.com/) 
+* Creating a local repository and connecting it with a remote repository over SSH
+  * To initialize a local repository use the **git init** command
+  * Create a private/public keypair on the host where the local repository is located
+  * For Ubuntu
+    * Make sure your SSH-agent is running by using **sudo systemctl status ssh**
+    * Start SSH client by using **sudo systemctl start ssh**
+    * Use **ssh-keygen -t ed25519 -C "your_email@example.com"** to create a keypair
+  * Go to your github profile and paste in the content of the public key you created at the **SSH & GPG Keys** tab
+  * Now create a github repository and copy the SSH repository url
+  * Go back to your terminal where you created the local repo from
+  * Type in git remote add origin <REMOTE_URL> using the SSH url you just copied
+  * To verify the remote url use **git remote -v**
+  * Make sure to **add** and **commit** your local repository
+  * Use **push origin main** to push your local repo to the github repo 
 
 ### Task 4: Webex teams API
 
 * Start by setting up your DEVASC-LABVM and get it up and running. 
 * If not yet completed, see task 1.
-* 
+* Make sure to create an account in Webex
+* Copy you personal access token from the [Webex API site](https://developer.webex.com/docs/getting-started) making sure you are logged in
+* The Webex API enables users to create teams, spaces and send messages
+* Using Python to create a team using the Webex API
+  * Make sure to import the **requests** library
+  * use variables to store your personal token and the API url
+  * The correct url can be found on the [Webex API documentation page for creating teams](https://developer.webex.com/docs/api/v1/teams)
+  * A header also needs to be included to pass down the authorization and content-type 
+  * For creating a team, the "name" parameter is also required, this can be stored in a variable called **params**
+  * At last we need to use the requests .post() method and include the parameters url, headers and json
+  * We can also use print(request) so we can see the result of our API call
+*
 
 ### Task 5: Data Format Conversion
 
