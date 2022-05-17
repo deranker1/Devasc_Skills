@@ -1,0 +1,9 @@
+!
+config t
+!
+interface range FastEthernet0/6-12
+switchport mode access
+switchport acces vlan 40
+end
+show vlan brief
+!
