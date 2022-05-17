@@ -97,3 +97,20 @@ Possible issues:
   * Use print with the json method .dumps() and pass in the valid Dict variable 
   * Optionally you could also pass in the **indent** parameter with an assigned number to create a cleaner display
   * The dict should now display in JSON format
+
+### Task 7 : Network documentation
+The goal of this task is to push configurations to switches using netmiko API calls.
+The network consists of 2 layer3 switches, a network controller and a couple of switches.
+
+Shown below is the network diagram which we will work this project on:
+
+![alt text](https://github.com/deranker1/Devasc_Skills/blob/main/Task%207:%20Network%20documentation/Diagram_ENT2_2SNEa_BilginEmin.drawio.png)
+
+Below is the IP addressing plan and VLAN assignment for the network:
+
+![alt text](https://github.com/deranker1/Devasc_Skills/blob/main/Task%207:%20Network%20documentation/IPAddressing.PNG)
+
+### Task 8 : Netmiko
+
+
+
