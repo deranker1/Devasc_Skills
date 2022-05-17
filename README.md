@@ -156,7 +156,7 @@ for devices in all_devices:
 	print(output)
 ```
 
-TXT file with configuration commands that will be sent:
+The ConfigCommands.txt in the code above links to the txt file below which contains the configuration commands.
 
 ```txt
 !
