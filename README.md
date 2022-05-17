@@ -27,7 +27,7 @@
   * Paste in Python code in the IDLE script environment and click on run
   * The code output should display on the terminal screen
 
-Possible issues:
+**Possible issues**:
 * If you can't access jupyter via chromium based browser, try firefox
 * If Python IDLE gets errors when trying to run code, check the python versions and make sure they match
 
@@ -115,8 +115,6 @@ Following needs to be included in the network
 * HSRP
 * VLANs
 * Etherchannel LACP
-
-
 
 ### Task 8 : Netmiko
 
