@@ -97,3 +97,78 @@ Possible issues:
   * Use print with the json method .dumps() and pass in the valid Dict variable 
   * Optionally you could also pass in the **indent** parameter with an assigned number to create a cleaner display
   * The dict should now display in JSON format
+
+### Task 7 : Network documentation
+The goal of this task is to push configurations to switches using netmiko API calls over SSH protocol.
+The network consists of 2 layer3 switches, a network controller and a couple of switches.
+
+Shown below is the network diagram which we will work this project on:
+
+![alt text](https://github.com/deranker1/Devasc_Skills/blob/main/Task%207:%20Network%20documentation/Diagram_ENT2_2SNEa_BilginEmin.drawio.png)
+
+Below is the IP addressing plan and VLAN assignment for the network:
+
+![alt text](https://github.com/deranker1/Devasc_Skills/blob/main/Task%207:%20Network%20documentation/IPAddressing.PNG)
+
+Following needs to be included in the network
+
+* HSRP
+* VLANs
+* Etherchannel LACP
+
+
+
+### Task 8 : Netmiko
+
+Sending configurations with netmiko API over SSH to switch.
+
+Python script:
+
+```python
+#!/usr/bin/env python
+
+from netmiko import ConnectHandler
+
+iosv_l2_s1 = {
+	'device_type': 'cisco_ios',
+	'ip': '10.0.0.2',
+	'username': 'Ben',
+	'password': 'Ben',
+    'secret': 'Ben'
+}
+
+iosv_l2_s2 = {
+	'device_type': 'cisco_ios',
+	'ip': '192.168.10.164',
+	'username': 'admin',
+	'password': 'cisco',
+}
+
+with open('ConfigCommands.txt') as f:
+	lines = f.read().splitlines()
+print(lines)
+
+all_devices = [iosv_l2_s2]
+
+for devices in all_devices:
+	net_connect = ConnectHandler(**devices)
+	output = net_connect.send_config_set(lines)
+	print(output)
+```
+
+The ConfigCommands.txt in the code above links to the txt file below which contains the configuration commands.
+
+```txt
+!
+config t
+!
+interface range FastEthernet0/6-12
+switchport mode access
+switchport acces vlan 40
+end
+show vlan brief
+!
+```
+
+
+
